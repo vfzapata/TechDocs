@@ -8,3 +8,8 @@ Its principles are based on:
 - Software architecture completely dependent on the data
 
 ## Key concepts of the DDD:
+| Component | Description |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
