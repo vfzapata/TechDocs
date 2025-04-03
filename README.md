@@ -2,3 +2,4 @@
 ## Software Architecture [[Link]](https://github.com/vfzapata/TechDocs/tree/main/docs/software-architecture)
 - ### Fundamentals of Software Architecture
 - Domain Driven Design [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Domain-Driven-Design.md)
+- Command Query Responsibility Segregation (CQRS) [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Command-Query-Responsibility-Segregation.md)
