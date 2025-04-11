@@ -1,5 +1,5 @@
-## Frontend Architecture Guide
-Frontend architecture is not a one-size-fits-all discipline. In an ever-evolving landscape of technologies and frameworks, the "best" approach often depends on the project's context, the business domain, and the development team's expertise. The goal of this guide is to outline foundational principles and practices that help define a scalable, maintainable, and efficient frontend architecture.
+## Frontend Architecture
+Frontend architecture refers to the structural design and organization of a web application's user interface layer. It defines how components, styles, logic, and data are managed and interact with each other. While there’s no single right way to build a frontend, strong architecture is grounded in core principles like modularity, separation of concerns, and consistency. In an ever-evolving landscape of technologies and frameworks, the "best" approach often depends on the project's context, the business domain, and the development team's expertise. The goal of this guide is to outline foundational principles and practices that help define a scalable, maintainable, and efficient frontend architecture.
 
 ## Core Principles
 Regardless of the stack or methodology, the following principles should be at the core of any frontend architecture:
@@ -138,3 +138,25 @@ Once the principles above are defined and agreed upon, you can move into impleme
       ├── utils/
       ├── pages/
    ```
+
+4. <strong>Create Reusable Components:</strong> Start with atomic or shared components such as Button, Input, Modal. Use props and slots (where applicable) to enhance flexibility. Use component libraries if appropriate (e.g., shadcn/ui, Chakra UI, MUI), but maintain flexibility for overrides.
+5. <strong>Styling Strategy:</strong> Choose and document a styling approach:
+   - Utility-first (Tailwind)
+   - Component-based (Styled-components, Emotion)
+   - Traditional CSS/SCSS with Modules
+  
+   Ensure consistency via a design system or token system (colors, spacing, typography).
+
+6. <strong>Quality Assurance:</strong> Integrate testing from the beginning.
+   - <strong>Unit Tests:</strong> Test component logic (e.g., button click, form validation)
+   - <strong>Integration Tests:</strong> Simulate user flows
+   - <strong>Visual Tests:</strong> Use tools like Chromatic or Percy for UI regression testing
+  
+7. <strong>State Management / API Layer:</strong> Define how the app will manage state:
+   - Use local component state for small, isolated state
+   - Use global state (e.g., Zustand, Redux) for shared state
+  
+   Abstract API interactions into service files using fetch/axios/tRPC, and consider adding caching with libraries like React Query.
+
+## Final Thoughts
+Good frontend architecture is about creating systems that enable teams to move fast without breaking things. It's about balance between abstraction and practicality, between business needs and technical decisions. Collaboration, consistency, and communication across the team are just as important as technical skills.
