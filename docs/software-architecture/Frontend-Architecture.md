@@ -7,9 +7,9 @@ Regardless of the stack or methodology, the following principles should be at th
 1. <strong>Modularity:</strong> Break down the application into self-contained, reusable components or modules.
    
    </br><strong>Why it matters:</strong>
-   - Promotes reuse across the application
-   - Simplifies testing and debugging
-   - Enhances readability and team collaboration
+   - Promotes reuse across the application.
+   - Simplifies testing and debugging.
+   - Enhances readability and team collaboration.
   
    </br><strong>Example:</strong> A Button component should be reusable across the entire app with different props such as variant, size, or onClick logic.
 
@@ -22,9 +22,9 @@ Regardless of the stack or methodology, the following principles should be at th
 2. <strong>Clear and Clean Project Navigation:</strong> Organize files and folders in a consistent, discoverable structure.
    
    </br><strong>Why it matters:</strong>
-   - Improves developer onboarding
-   - Speeds up development by making code easier to find
-   - Reduces merge conflicts and duplicated logic
+   - Improves developer onboarding.
+   - Speeds up development by making code easier to find.
+   - Reduces merge conflicts and duplicated logic.
   
    </br><strong>Example folder structure:</strong>
    ```
@@ -41,10 +41,10 @@ Regardless of the stack or methodology, the following principles should be at th
 3. <strong>Separation of Concerns:</strong> Divide the project by responsibility, component logic, UI styling, data fetching, and state management should all be handled in isolation.
    
    </br><strong>Why it matters:</strong>
-   - Increases maintainability
-   - Encourages reuse
-   - Simplifies testing
-   - Simplifies debugging
+   - Increases maintainability.
+   - Encourages reuse.
+   - Simplifies testing.
+   - Simplifies debugging.
   
 4. <strong>Clean Code Practices:</strong> Adopt software engineering best practices such as:
    
@@ -59,4 +59,82 @@ Regardless of the stack or methodology, the following principles should be at th
    - Hooks: useFetchUser.ts|js
    - State files: userStore.ts|js
   
+5. <strong>Team Collaboration Rules:</strong> Establish and align on a set of conventions and processes:
+   
+   - <strong>Branching strategy:</strong> (e.g., Git flow, trunk-based development).
+   - <strong>Commit message format</strong> (e.g., Conventional Commits).
+   - <strong>Pull request (PR) guidelines:</strong> Size, review process, checklist.
+   - <strong>Code review practices:</strong> What to look for, tone of feedback.
+  
+6. <strong>Understanding the Business Domain:</strong> Every developer should have a clear understanding of the product’s goals and how the frontend contributes to solving the business problem. Architectural decisions should be informed by business needs, such as performance, accessibility, internationalization, or scalability requirements.
 
+
+
+## Project Initialization Steps
+Once the principles above are defined and agreed upon, you can move into implementation.
+
+1. <strong>Choose the Right Tech Stack</strong> Select technologies that align with:
+
+- Team skill set
+- Business requirements
+- Project scope and complexity
+
+<strong>Categories to evaluate:</strong>
+
+- Framework: React, Vue, Svelte, etc.
+- Language: TypeScript over JavaScript for type safety
+- Styling: CSS Modules, Tailwind, Styled-components
+- State management: React Context, Redux, Zustand, Recoil
+- Testing: Vitest, Jest, Cypress, Playwright
+- Linting and formatting: ESLint, Prettier, Stylelint
+- Build tooling: Vite, Webpack, Turbopack
+  
+2. <strong>Project Setup</strong> Start with configuration files:
+   - ```tsconfig.json```
+   - ```.eslintrc.js```
+   - ```.prettierrc```
+   - ```.stylelintrc```
+   - ```vite.config.ts``` or ```webpack.config.js```
+  
+   Create a placeholder or boilerplate project with basic folder structure and routing in place.
+
+3. <strong>Define Folder Structure:</strong> Structure the project with scalability in mind. Example:
+
+   ```
+   src/
+      ├── assets/
+      ├── components/
+      │   └── common/
+      ├── features/
+      │   └── user/
+      │       └── hooks/
+      │       └── services/
+      ├── hooks/
+      ├── services/
+      ├── state/
+      ├── utils/
+      ├── pages/
+      ├── styles/
+      ├── tests/
+      ├── stories/
+
+      Or
+
+   src/
+      ├── assets/
+      ├── components/
+      │   └── common/
+      │   └── ComponentName/
+      │     └── ComponentName.jsx/
+      │     └── ComponentName.test.jsx/
+      │     └── ComponentName.stories.jsx/
+      │     └── ComponentName.stories.scss/
+      ├── features/
+      │     └── hooks/
+      │     └── services/
+      ├── hooks/
+      ├── services/
+      ├── state/
+      ├── utils/
+      ├── pages/
+   ```
