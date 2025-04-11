@@ -18,8 +18,22 @@ Regardless of the stack or methodology, the following principles should be at th
     Submit
    </Button>
    ```
+2. <strong>Scalability:</strong> It refers to the system’s ability to handle increasing amounts of work, users, or data efficiently, without compromising performance, reliability, or maintainability.
 
-2. <strong>Clear and Clean Project Navigation:</strong> Organize files and folders in a consistent, discoverable structure.
+   </br><strong>Why it matters:</strong>
+   - Supports business growth.
+   - Prevents technical debt accumulation.
+   - Improves long-term maintainability.
+   - Enables faster onboarding and collaboration.
+  
+   <strong>When evaluating scalability, always ask yourself the following questions:</strong>
+   - <strong>Codebase scalability:</strong> Can your codebase support more features and contributors without becoming messy or hard to manage?
+   - <strong>Component scalability:</strong> Are components reusable, composable, and easy to extend?
+   - <strong>Performance scalability:</strong> Can your UI handle large datasets or heavy interactions smoothly?
+
+   </br><strong>Example:</strong> A dashboard that starts with 3 charts might work fine, but if the business adds 20 more widgets later, the architecture should still support fast rendering, lazy loading, and maintainability.
+
+4. <strong>Clear and Clean Project Navigation:</strong> Organize files and folders in a consistent, discoverable structure.
    
    </br><strong>Why it matters:</strong>
    - Improves developer onboarding.
@@ -38,7 +52,7 @@ Regardless of the stack or methodology, the following principles should be at th
     state/
    ```
 
-3. <strong>Separation of Concerns:</strong> Divide the project by responsibility, component logic, UI styling, data fetching, and state management should all be handled in isolation.
+5. <strong>Separation of Concerns:</strong> Divide the project by responsibility, component logic, UI styling, data fetching, and state management should all be handled in isolation.
    
    </br><strong>Why it matters:</strong>
    - Increases maintainability.
@@ -46,7 +60,7 @@ Regardless of the stack or methodology, the following principles should be at th
    - Simplifies testing.
    - Simplifies debugging.
   
-4. <strong>Clean Code Practices:</strong> Adopt software engineering best practices such as:
+6. <strong>Clean Code Practices:</strong> Adopt software engineering best practices such as:
    
    - <strong>DRY (Don't Repeat Yourself):</strong> Reuse code where possible, avoid duplication.
    - <strong>KISS (Keep It Simple, Stupid):</strong> Avoid over-engineering.
@@ -59,14 +73,14 @@ Regardless of the stack or methodology, the following principles should be at th
    - Hooks: useFetchUser.ts|js
    - State files: userStore.ts|js
   
-5. <strong>Team Collaboration Rules:</strong> Establish and align on a set of conventions and processes:
+7. <strong>Team Collaboration Rules:</strong> Establish and align on a set of conventions and processes:
    
    - <strong>Branching strategy:</strong> (e.g., Git flow, trunk-based development).
    - <strong>Commit message format</strong> (e.g., Conventional Commits).
    - <strong>Pull request (PR) guidelines:</strong> Size, review process, checklist.
    - <strong>Code review practices:</strong> What to look for, tone of feedback.
   
-6. <strong>Understanding the Business Domain:</strong> Every developer should have a clear understanding of the product’s goals and how the frontend contributes to solving the business problem. Architectural decisions should be informed by business needs, such as performance, accessibility, internationalization, or scalability requirements.
+8. <strong>Understanding the Business Domain:</strong> Every developer should have a clear understanding of the product’s goals and how the frontend contributes to solving the business problem. Architectural decisions should be informed by business needs, such as performance, accessibility, internationalization, or scalability requirements.
 
 
 
