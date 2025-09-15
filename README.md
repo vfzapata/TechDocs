@@ -7,4 +7,4 @@
 - Frontend Architecture [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Frontend-Architecture.md)
 
 ## Frontend Concepts
-### TypeScript Fundamentals
+### TypeScript Fundamentals [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/Frontend/typescript-fundamentals.md)
