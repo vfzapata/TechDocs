@@ -5,3 +5,6 @@
 - Command Query Responsibility Segregation (CQRS) [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Command-Query-Responsibility-Segregation.md)
 - Microservices Architecture [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Microservices-Architecture.md)
 - Frontend Architecture [[Link]](https://github.com/vfzapata/TechDocs/blob/main/docs/software-architecture/Frontend-Architecture.md)
+
+## Frontend Concepts
+### TypeScript Fundamentals
