@@ -108,6 +108,80 @@ const add: MathOperation = (x, y) => x + y;
 const subtract: MathOperation = (x, y) => x - y;
 ```
 
+### Classes
+In TypeScript, classes are blueprints for creating objects with shared properties and methods. TypeScript enhances JavaScript classes by adding:
+- Strong typing.
+- Access modifiers (public, private, protected).
+- readonly properties.
+- Abstract classes.
+- Getters and setters
+
+```
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet(): string {
+    return `Hello, I'm ${this.name} and I'm ${this.age} years old.`;
+  }
+}
+
+const person = new Person("John", 30);
+console.log(person.greet());
+
+/*
+* Access Modifiers
+* public: Default modifier. Accessible from anywhere.
+* private: Only accessible inside the same class.
+* protected: Accessible in the class and its subclasses.
+*/
+class BankAccount {
+  private balance: number;
+
+  constructor(initial: number) {
+    this.balance = initial;
+  }
+
+  deposit(amount: number) {
+    this.balance += amount;
+  }
+
+  getBalance() {
+    return this.balance;
+  }
+}
+
+// Inheritance
+class Employee extends Person {
+  salary: number;
+
+  constructor(name: string, age: number, salary: number) {
+    super(name, age);
+    this.salary = salary;
+  }
+
+  showSalary() {
+    return `${this.name} earns ${this.salary}`;
+  }
+}
+
+// Readonly Properties
+class Point {
+  readonly x: number;
+  readonly y: number;
+
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
+}
+```
+
 ### Advantages and Disadvantages of TypeScript
 
 ### ✅ Advantages
