@@ -182,6 +182,49 @@ class Point {
 }
 ```
 
+### Generics
+Generics allow TypeScript to create reusable components that work with multiple types while preserving type safety.
+
+They improve:
+- Reusability
+- Flexibility
+- Type inference
+- Maintainability
+
+```
+// Generic Functions
+function identity<T>(value: T): T {
+  return value;
+}
+
+const num = identity<number>(10);
+const str = identity<string>("hello");
+
+// Generic Interfaces
+interface ApiResponse<T> {
+  data: T;
+  success: boolean;
+}
+
+const response: ApiResponse<string> = {
+  data: "User created",
+  success: true,
+};
+
+// Generic Classes
+class Box<T> {
+  content: T;
+
+  constructor(content: T) {
+    this.content = content;
+  }
+}
+
+const numberBox = new Box<number>(123);
+const stringBox = new Box<string>("hello");
+
+```
+
 ### Advantages and Disadvantages of TypeScript
 
 ### ✅ Advantages
